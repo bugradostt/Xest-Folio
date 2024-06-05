@@ -17,7 +17,42 @@
         <div>
           <div>Load More</div>
         </div>
-</div>
+
+      </div>
+
+
+      <div class="row" v-for="i in 3" >
+
+        <div class="col-md-2"></div>
+
+        <div class=" col-sm-12 col-md-4">
+
+          <CardBlog
+          overline="UI Design  |   22 May  2023"
+          title="test"
+          img="/img/blog1.jpg"
+          des="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system"
+          >
+          </CardBlog>
+
+        </div>
+
+        <div class=" col-sm-12 col-md-4">
+
+        <CardBlog
+        overline="UI Design  |   22 May  2023"
+        title="test"
+        img="/img/blog2.jpg"
+        des="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system"
+        >
+        </CardBlog>
+
+        </div>
+
+        <div class="col-md-2"></div>
+
+      </div>
+
 
 
 
@@ -27,12 +62,15 @@
 
 <script setup>
 import { ref  } from 'vue'
+import CardBlog from 'src/components/CardBlog.vue'
 
 
 
 </script>
 
 <style scoped>
+
+
 .body{
   background-color: #181818;
 }
