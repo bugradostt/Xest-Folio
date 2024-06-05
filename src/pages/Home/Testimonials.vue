@@ -45,22 +45,22 @@ var slide = ref('style')
 const comments = ref([
 
   {
-    title:"“Now, i can track my business activity with easier.",
-    user:"dlfd",
-    star:"4.5",
+    title:"“Now, i can track my business activity with easier and have a great understandable to operate the products",
+    user:"Cobocannaeru",
+    star:"2.5",
     img:"public/img/user1.png",
   },
   {
     title:"“Now, i can track my business activity with easier and have a great understandable to operate the products",
-    user:"dlfd",
-    star:"4.5",
+    user:"Berry Gunawan",
+    star:"3.5",
     img:"public/img/user3.png",
 
   },
   {
-    title:"“Now, i can track my business.",
-    user:"dlfd",
-    star:"4.5",
+    title:"“Now, i can track my business activity with easier and have a great understandable to operate the products",
+    user:"Janne Cooper",
+    star:"4.3",
     img:"public/img/user2.png",
 
   },
