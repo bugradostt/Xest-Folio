@@ -32,29 +32,13 @@
 
       <div class="row">
 
-        <div class="col-4">
-          <Card></Card>
+        <div class="col-4" v-for="i in imgList">
+          <Card :img="i"></Card>
         </div>
 
-        <div class="col-4">
-          <Card></Card>
-        </div>
 
-        <div class="col-4">
-          <Card></Card>
-        </div>
 
-        <div class="col-4">
-          <Card></Card>
-        </div>
 
-        <div class="col-4">
-          <Card></Card>
-        </div>
-
-        <div class="col-4">
-          <Card></Card>
-        </div>
 
       </div>
 
@@ -64,6 +48,18 @@
 
 <script setup>
 import Card from 'src/components/Card.vue'
+
+var imgList = [
+  "public/img/laptop.jpg",
+  "public/img/laptop2.jpg",
+  "public/img/kamera.jpg",
+  "public/img/kamera.jpg",
+  "public/img/laptop.jpg",
+  "public/img/laptop2.jpg",
+  "public/img/laptop.jpg",
+  "public/img/laptop2.jpg",
+  "public/img/kamera.jpg",
+]
 
 </script>
 

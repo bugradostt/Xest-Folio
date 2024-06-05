@@ -1,13 +1,32 @@
 <template>
 
-  <q-card class="my-card" flat bordered>
-        <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg"  />
+  <q-card class="card" flat bordered>
+    <q-img :src="props.img"  class="img" />
+  </q-card>
+</template>
 
-      </q-card>
-  </template>
+<script setup>
 
-  <style scoped>
-  .my-card{
-    width: 100%;
-    max-width: 400px}
-  </style>
+import {ref ,defineProps, defineEmits } from 'vue';
+
+const props = defineProps({
+
+  img: {
+    type: String,
+    default: ""
+  },
+
+})
+
+
+</script>
+
+<style scoped>
+.card{
+margin: 10px;
+}
+
+.img{
+  height: 300px;
+}
+</style>
