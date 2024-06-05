@@ -1,6 +1,6 @@
-# Xest Folio (xest-folio)
+# Xest Folio
 
-Xest Folio
+## Xest Folio - Tanıtım Videosu
 
 ## Install the dependencies
 ```bash
