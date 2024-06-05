@@ -34,7 +34,7 @@
 }
 
 .image-container img {
-    margin: 0 50px;
+    margin: 0 70px;
 }
 
 

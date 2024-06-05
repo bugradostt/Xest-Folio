@@ -32,7 +32,7 @@
 
       <div class="row">
 
-        <div class="col-4" v-for="i in imgList">
+        <div class="col-xs-12 col-md-6 col-lg-4"  v-for="i in imgList">
           <Card :img="i"></Card>
         </div>
 

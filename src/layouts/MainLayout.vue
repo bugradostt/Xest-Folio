@@ -43,12 +43,13 @@
     </q-page-container>
 
 
-    <q-footer bordered class="bg-white text-grey">
+    <div bordered class="bg-white text-grey">
+      <q-separator />
     <div class="footer-content q-pa-md">
       <span class="left-content">© 2023 Ideapeel Inc. All Rights Reserved</span>
       <span class="right-content">Privacy Policy | Terms and Conditions</span>
     </div>
-  </q-footer>
+  </div>
 
   </q-layout>
 </template>
