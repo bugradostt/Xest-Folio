@@ -1,8 +1,14 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="lHh Lpr lFf ">
 
-    <q-toolbar class="bg-white text-black  ">
-      <q-btn flat label="Xest Folio" />
+    <q-toolbar class="bg-white text-black q-pa-lg ">
+      <q-btn flat >
+        <span class="title-company">
+          Xest
+          <br>
+          Folio
+        </span>
+      </q-btn>
       <q-space />
 
 
@@ -12,7 +18,19 @@
         <q-tab name="service" label="Service" />
         <q-tab name="blogs" label="Blogs" />
         <q-tab name="faq" label="FAQ" />
-        <q-tab name="contactMe" label="Contact Me" />
+        <q-tab name="contactMe"  >
+          <div>
+
+              <div class="contact-me">
+                Contact Me
+              </div>
+
+              <div class="contact-me-gradient">
+
+              </div>
+
+            </div>
+        </q-tab>
 
       </q-tabs>
     </q-toolbar>
@@ -58,4 +76,32 @@ import { ref } from 'vue';
   text-align: right;
   margin-right: 150px;
 }
+
+
+.title-company {
+    background: linear-gradient(180deg, #5635dd, #e63573);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.contact-me {
+    color: white;
+    background-color: black;
+    font-size: 12px;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .contact-me-gradient {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: #5635dd;
+    background-image: linear-gradient(90deg, #5635dd 0%, #e63573 100%);
+    position: relative;
+    margin-left:5px ;
+    margin-top: -25px;
+    z-index: 1;
+  }
 </style>

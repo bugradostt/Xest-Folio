@@ -15,7 +15,22 @@
           </div>
         </div>
         <div>
-          <div>Load More</div>
+
+
+
+          <div>
+
+            <div class="load-more">
+              Load More
+            </div>
+
+            <div class="load-more-gradient">
+
+          </div>
+
+
+
+        </div>
         </div>
 
       </div>
@@ -69,6 +84,28 @@ import CardBlog from 'src/components/CardBlog.vue'
 </script>
 
 <style scoped>
+
+.load-more {
+    color: black;
+    background-color: white;
+    font-size: 12px;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .load-more-gradient {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: #5635dd;
+    background-image: linear-gradient(90deg, #5635dd 0%, #e63573 100%);
+    position: relative;
+    margin-left:5px ;
+    margin-top: -25px;
+    z-index: 1;
+  }
+
 
 
 .body{
