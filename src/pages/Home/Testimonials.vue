@@ -18,7 +18,7 @@
           :class="['carousel-item', { 'is-active': index === 1 }]">
           <div class="comment-content">
 
-            <CardTestimonials :title="i"></CardTestimonials>
+            <CardTestimonials :img="i.img" :user="i.user" :star="i.star" :title="i.title"></CardTestimonials>
           </div>
         </div>
       </div>
@@ -43,13 +43,29 @@ var slide = ref('style')
 
 
 const comments = ref([
-  'Yorum 1',
-  'Yorum 2',
-  'Yorum 3',
-  'Yorum 4',
-  'Yorum 5',
-  'Yorum 6',
-  'Yorum 7'
+
+  {
+    title:"“Now, i can track my business activity with easier.",
+    user:"dlfd",
+    star:"4.5",
+    img:"public/img/user1.png",
+  },
+  {
+    title:"“Now, i can track my business activity with easier and have a great understandable to operate the products",
+    user:"dlfd",
+    star:"4.5",
+    img:"public/img/user3.png",
+
+  },
+  {
+    title:"“Now, i can track my business.",
+    user:"dlfd",
+    star:"4.5",
+    img:"public/img/user2.png",
+
+  },
+
+
 ]);
 
 const activeIndex = ref(2);
