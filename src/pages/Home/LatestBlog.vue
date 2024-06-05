@@ -44,7 +44,7 @@
 
           <CardBlog
           overline="UI Design  |   22 May  2023"
-          title="test"
+          title="What is UI Design in Front End Design?"
           img="/img/blog1.jpg"
           des="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system"
           >
@@ -56,7 +56,7 @@
 
         <CardBlog
         overline="UI Design  |   22 May  2023"
-        title="test"
+        title="What is UI Design in Front End Design?"
         img="/img/blog2.jpg"
         des="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system"
         >
