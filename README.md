@@ -1,6 +1,8 @@
 # Xest Folio
 
 ## Xest Folio - Tanıtım Videosu
+[![Video adı](https://github.com/bugradostt/Xest-Folio/blob/main/public/img/video-kapak.png)](https://github.com/bugradostt/Xest-Folio/blob/main/public/video.mp4)
+
 
 ## Install the dependencies
 ```bash
