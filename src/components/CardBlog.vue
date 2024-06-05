@@ -15,6 +15,7 @@
         </div>
       </q-card-section>
       <q-btn flat color="white" label="READ MORE"  style="margin: -60px 0 0 40px; background-color: #181818;">
+        <i style="margin-left: 10px;" class="fa-solid fa-arrow-up-right-from-square"></i>
       </q-btn>
 
 

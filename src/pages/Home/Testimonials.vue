@@ -1,25 +1,29 @@
 <template>
   <div class="q-ma-xl">
 
+    <div class="container">
 
-
-
-    <span>Testimonials</span>
-    <span>What our customer say</span>
-
-      <div class="carousel-container">
-    <button @click="prev" class="carousel-button prev">‹</button>
-    <div class="carousel-wrapper">
-      <div
-        v-for="(comment, index) in visibleComments"
-        :key="index"
-        :class="['carousel-item', { 'is-active': index === 1 }]"
-      >
-        <div class="comment-content">{{ comment }}</div>
+      <div class="title-testimonials">Testimonials</div>
+      <div class="des">
+        What our customer say
       </div>
+
+
     </div>
-    <button @click="next" class="carousel-button next">›</button>
-  </div>
+
+    <div class="carousel-container">
+      <button @click="prev" class="carousel-button prev">‹</button>
+      <div class="carousel-wrapper">
+        <div v-for="(i, index) in visibleComments" :key="index"
+          :class="['carousel-item', { 'is-active': index === 1 }]">
+          <div class="comment-content">
+
+            <CardTestimonials :title="i"></CardTestimonials>
+          </div>
+        </div>
+      </div>
+      <button @click="next" class="carousel-button next">›</button>
+    </div>
 
 
   </div>
@@ -28,13 +32,13 @@
 </template>
 
 <script setup>
-import { ref,computed  } from 'vue'
+import { ref, computed } from 'vue'
 import CardTestimonials from 'src/components/CardTestimonials.vue'
 
 
 
 
-var slide=  ref('style')
+var slide = ref('style')
 
 
 
@@ -74,12 +78,30 @@ const visibleComments = computed(() => {
 
 
 <style scoped>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 
-.my-card{
-  width: 100%;
-  max-width: 300px}
+.title-testimonials {
+  background: linear-gradient(90deg, #5635dd, #e63573);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  .carousel-container {
+.des {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 43px;
+}
+
+
+
+.carousel-container {
+  padding: 50px;
   position: relative;
   width: 80%;
   margin: auto;
@@ -125,4 +147,3 @@ const visibleComments = computed(() => {
   margin-left: -1.5em;
 }
 </style>
-
